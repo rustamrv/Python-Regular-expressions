@@ -1,14 +1,7 @@
 import re
-
-def print_findall(pattern, text):
-    for pat in pattern:
-        print('Searching for pattern {}'.format(pat))
-        print(re.findall(pat,text))
-        print('\n')
-
-
+ 
 #pattern = r'[A-Z]{3}' # мое
-pattern = r'\w+$' # в ютюбе
+pattern = r'\w+$'  
 text = 'Subsribe to Python insider via RSS'
 print(re.findall(pattern,text))
 
